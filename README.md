@@ -1,2 +1,2 @@
 # CS101
-Programming assignments from freshman CS101 (Algorithms and Programming I) course
+Programming assignments from freshman Bilkent CS101 (Algorithms and Programming I) course
