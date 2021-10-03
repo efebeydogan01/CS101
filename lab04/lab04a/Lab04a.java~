@@ -1,0 +1,165 @@
+import java.util.Scanner;
+
+/**
+ * Applications of the while statement
+ * @author Efe Beydoðan
+ * @version 1.0 30.10.2019
+ */ 
+public class Lab04a
+{
+   public static void main( String[] args)
+   {
+      Scanner scan = new Scanner( System.in);
+      
+      //variables
+      int n;
+      int x; //Integer values from 0 up to n exclusive on the same line
+      int y; //Integer values from 0 up to n exclusive (5 values on the same line)
+      int z; //Integer values from n down to 0 inclusive on the same line
+      int m; //Even values from -n to n inclusive on the same line
+      int u; //Squares of even values from 0 to n inclusive
+      int p; //Values which are divisible by 3 or 4 but not both
+      int t; //All the divisors of n
+      double k;
+      double i;
+      int counter;
+      
+      //Receive a positive integer value from the user
+      System.out.print( "Please enter a positive integer value: ");
+      n = scan.nextInt();
+      
+      //If the value is negative ask for another value
+      while ( n <= 0 )
+      {
+         System.out.print( "Value must be a positive integer, please enter again: ");
+         n = scan.nextInt();
+      }
+      
+      //Print all the integer values from 0 up to n exclusive on the same line
+      System.out.println( "All the integer values from 0 up to " + n + " exclusive on the same line:");
+      x = 0;
+      while ( x < n )
+      {
+         System.out.print( x + " ");
+         x++;
+      }
+      
+      System.out.println( " ");
+      System.out.println( " ");
+      
+      //Print all the integer values from 0 up to n exclusive (5 integers on the same line)
+      System.out.println( "All the integer values from 0 up to " + n + " exclusive (5 integers per line):");
+      y = 0;
+      while ( y < n )
+      {
+         System.out.print( y + " ");
+         y++;
+         if ( y % 5 == 0)
+         {
+            System.out.println( " ");
+         }
+      }
+      
+      System.out.println( " ");
+      System.out.println( " ");
+     
+      //Print all the integer values from n down to 0 inclusive on the same line
+      System.out.println( "All the integer values from " + n + " down to 0 inclusive on the same line:");
+      z = n;
+      while ( z >= 0 )
+      {
+         System.out.print( z + " ");
+         z--;
+      }
+     
+      System.out.println( " ");
+      System.out.println( " ");
+     
+      //Print all the even values from -n to n inclusive on the same line
+      System.out.println( "All the even values from -" + n + " to " + n + " inclusive on the same line:");
+      m = -n;
+      while ( m <= n )
+      {
+         if ( m % 2 == 0)
+         {
+            System.out.print( m + " ");
+         }
+         m++;
+      }
+     
+      System.out.println( " ");
+      System.out.println( " ");
+     
+      //Print the squares of all the even values from 0 up to n inclusive (5 values per line)
+      System.out.println( "The squares of all the even values from 0 up to " + n + " inclusive (5 values per line):");
+      u = 0;
+      while ( u <= n )
+      {
+         System.out.print( u * u + " ");
+         u = u + 2;
+         if ( u * u % 5 == 0)
+         {
+            System.out.println( " ");
+         }
+      }
+      
+      System.out.println( " ");
+      System.out.println( " ");
+      
+      //Print the values which are divisible by 3 or 4 but not both from n down to 3 inclusive (5 values per line),
+      System.out.println( "The values which are divisible by 3 or 4 but not both from " + n + " down to 3 inclusive (5 values per line):");
+      p = n;
+      counter = 0;
+      while ( p >= 3 )
+      {
+         if ( p % 3 == 0 && p % 4 == 0 )
+         {
+         }
+         else 
+         {
+            if ( p % 3 == 0 || p % 4 == 0 )
+            {
+               System.out.print( p + " ");
+               counter++;
+               if ( counter % 5 == 0)
+               {
+                  System.out.println( " ");
+               }
+            } 
+         }
+         p--;
+      }
+            
+      System.out.println( " ");
+      System.out.println( " ");
+      
+      //Print all the divisors of the number entered
+      System.out.println( "All the divisors of " + n + ":");
+      t = 2;
+      while ( t <= n )
+      {
+         if ( n % t == 0)
+         {
+            System.out.print( t + " ");
+         }
+         t++;
+      }
+      
+      System.out.println( " ");
+      System.out.println( " ");
+      
+      //For every integer k from n down to 1, print the value 1/k if it is greater than 0.01
+      System.out.println( "For every integer k from " + n + " down to 1, the value 1/k, if it is greater than 0.01, is:");
+      k = n;
+      while ( k > 0 )
+      {
+         i = (1/k);
+         i = Math.round(i * 100.0) / 100.0;
+         if ( i > 0.01 )
+         {
+            System.out.print( i + " ");
+         }
+         k--;
+      }
+   }
+}

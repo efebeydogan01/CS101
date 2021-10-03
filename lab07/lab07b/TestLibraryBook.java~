@@ -1,0 +1,20 @@
+/**
+ * A program to test LibraryBook class 
+ * @author Efe Beydoðan
+ * @version 27.11.2019
+ */ 
+public class TestLibraryBook
+{
+   public static void main( String[] args)
+   {
+      Scanner scan = new Scanner( System.in);
+
+      // constants
+
+      // variables
+
+      // program code
+      
+   }
+
+}

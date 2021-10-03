@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<drjava version="drjava-20160913-225446">
+  <project autorefresh="false" root="" work="">
+    <createjar file=""/>
+    <source>
+      <file active="true" name="Dice.java" package="" timestamp="27-Nov-2019 09:30:18">
+        <select from="81" to="81"/>
+        <scroll column="0" row="0"/>
+      </file>
+      <file name="TestDiceGame.java" package="" timestamp="27-Nov-2019 08:51:35">
+        <select from="81" to="81"/>
+        <scroll column="0" row="0"/>
+      </file>
+      <file name="Lab07a.java" package="" timestamp="23-Nov-2019 21:05:26">
+        <select from="81" to="81"/>
+        <scroll column="0" row="0"/>
+      </file>
+      <file name="TestDie.java" package="" timestamp="27-Nov-2019 09:10:51">
+        <select from="81" to="81"/>
+        <scroll column="0" row="0"/>
+      </file>
+      <file name="DiceGame.java" package="" timestamp="27-Nov-2019 09:30:00">
+        <select from="81" to="81"/>
+        <scroll column="0" row="0"/>
+      </file>
+      <file name="Die.java" package="" timestamp="27-Nov-2019 09:30:31">
+        <select from="81" to="81"/>
+        <scroll column="0" row="0"/>
+      </file>
+    </source>
+    <included/>
+    <excluded/>
+    <collapsed/>
+    <classpath/>
+    <breakpoints/>
+    <watches/>
+    <bookmarks/>
+    <preferences/>
+  </project>
+</drjava>

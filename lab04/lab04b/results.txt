@@ -1,0 +1,5 @@
+The sum of the values is 5324.0.
+You've entered 100 values.
+The average of the 100 values is: 53.24
+The maximum value is 98.
+The minimum value is -2.

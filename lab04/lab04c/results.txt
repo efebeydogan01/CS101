@@ -1,0 +1,3 @@
+The average of the numbers is 5.5
+The maximum value is 10.
+The minimum value is 1.
